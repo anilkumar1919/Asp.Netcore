@@ -1,0 +1,7 @@
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\helloworldApp.exe
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\helloworldApp.dll
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\helloworldApp.deps.json
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\helloworldApp.runtimeconfig.json
+C:\Users\prasannareddy\webinar\helloworldApp\bin\Debug\net6.0\publish\helloworldApp.pdb
