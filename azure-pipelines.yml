@@ -13,7 +13,7 @@ pool:
   vmImage: windows-latest
 
 variables:
-  buildConfiguration: 'run'
+  buildConfiguration: 'Release'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
