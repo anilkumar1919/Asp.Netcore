@@ -13,7 +13,7 @@ pool:
   vmImage: windows-latest
 
 variables:
-  buildConfiguration: 'Run'
+  buildConfiguration: 'Release'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -21,18 +21,18 @@ steps:
     inputs:
       command: restore
       projects: $(BuildParameters.RestoreBuildProjects)
-  - task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
     displayName: Build
     inputs:
       projects: $(BuildParameters.RestoreBuildProjects)
       arguments: --configuration $(BuildConfiguration)
-  - task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
     displayName: Test
     inputs:
       command: test
       projects: $(BuildParameters.TestProjects)
       arguments: --configuration $(BuildConfiguration)
-  - task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
     displayName: Publish
     inputs:
       command: publish
@@ -40,7 +40,7 @@ steps:
       projects: $(BuildParameters.RestoreBuildProjects)
       arguments: --configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)
       zipAfterPublish: True
-  - task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@1
     displayName: Publish Artifact
     condition: succeededOrFailed()
     inputs:
