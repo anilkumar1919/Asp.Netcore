@@ -16,7 +16,7 @@ steps:
     displayName: Restore
     inputs:
       command: restore
-      projects: $(BuildParameters.RestoreBuildProjects)
+      projects: $(BuildParameters.RestoreBuildProjects)/**/*.csproj
   - task: DotNetCoreCLI@2
     displayName: Build
     inputs:
